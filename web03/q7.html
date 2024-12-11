@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Media Feature</title>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1">
+        <style>
+            body {
+                background-color: skyblue;
+            }
+            #image {
+                width: 400px;
+                height: 300px;
+                margin: 50px;  
+                padding: 50px;
+            }
+            /* smart phone */
+            @media screen and (max-width: 767px) {
+                #blackpink {
+                    font-size: 50px;
+                    width: 400px;
+                    height: 50px;
+                    vertical-align: middle;
+                    background-color: black;
+                    color: violet;
+                }
+                #yellowpink, #greenpink {
+                    display: none;
+                }
+            }
+            /* ipad */
+            @media screen and (min-width: 768px) and (max-width: 959px) {
+                #blackpink, #greenpink {
+                    display: none;
+                }
+                #yellowpink {
+                    font-size: 50px;
+                    width: 400px;
+                    height: 50px;
+                    vertical-align: middle;
+                    background-color: yellow;
+                    color: violet;
+                }
+            }
+            /* desktop */
+            @media screen and (min-width: 960px) {
+                #blackpink, #yellowpink {
+                    display: none;
+                }
+                #greenpink {
+                    font-size: 50px;
+                    width: 400px;
+                    height: 120px;
+                    vertical-align: middle;
+                    background-color: lime;
+                    color: violet;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <div id="blackpink">난 김대철</div>
+            <div id="yellowpink">난 김대철</div>
+            <div id="greenpink">난 김대철이다. 미래의 블랙핑크 멤버</div>
+            
+            <img id="image" src="lose.png">
+        </center>
+    </body>
+</html>

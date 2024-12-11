@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        th{
+            color: blue;
+            background-color: orange;
+            text-align: center;
+        }
+
+
+        #login {
+            margin: 5px;
+            /*바깥쪽 여백*/
+            padding: 5px;
+            /*안쪽 여백 */
+            background-color: yellow;
+            width: 350px;
+            height: 180px;
+        }
+
+        
+        #btn{
+            background-color: red;
+            color: blue;
+        }
+
+
+        #loginLb {
+            background-color: rgb(17, 255, 0); /* 버튼 영역 배경색 */
+            text-align: center;
+            color: blue;
+            
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    
+
+    <div id="total">
+        <div id="login">
+            <h2>로그인 화면</h2>
+            <table border="1">
+                <tr>
+                    <th>아이디</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>패스워드</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <!-- 행 합치기 -->
+                    <td colspan="2" id="loginLb">
+                        <input type="button" value="서버로 전송" id="btn">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        
+        
+    </div>
+
+    
+
+
+</body>
+</html>
